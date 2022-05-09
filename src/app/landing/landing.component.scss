@@ -35,4 +35,23 @@
             padding: 32px 8px;
         }
     }
+
+    .section-fold-three {
+        .image-section {
+            .img-fluid {
+                width: 600px;
+            }
+        }
+
+        .app-feature-item {
+            display: flex;
+            align-items: center;
+
+            .image {
+                width: 60px;
+                height: 60px;
+                margin-right: 24px;
+            }
+        }
+    }
 }
