@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "dashboard-overview.component.scss"
+    ],
+    "names": [],
+    "file": "dashboard-overview.component.css"
+}

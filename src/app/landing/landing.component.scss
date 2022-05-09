@@ -1,0 +1,38 @@
+@import "../../styles.scss";
+
+.navbar-nav {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .nav-item {
+        margin-right: 24px;
+    }
+}
+
+.landing-page {
+    .background-image {
+        background-color: $color-secondary;
+        background-image: url("../../assets/images/background-image.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-bottom: 0;
+    }
+
+    .section-fold-two {
+        .list-group {
+            border: none;
+            
+            .list-group-item {
+                border: none;
+            }
+        }
+
+        .form-section {
+            border: 1px solid #C4C4C4;
+            border-radius: 8px;
+            padding: 32px 8px;
+        }
+    }
+}
