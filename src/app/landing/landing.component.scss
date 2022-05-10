@@ -94,4 +94,44 @@
             }
         }
     }
+
+    .section-fold-five {
+        .custom-accordian {
+
+            .card {
+                &:first-of-type {
+                    border-top-left-radius: 16px;
+                    border-top-left-radius: 16px;
+                }
+
+                &:last-of-type {
+                    border-bottom-left-radius: 16px;
+                    border-bottom-left-radius: 16px;
+                }
+
+                .card-header {
+                    background-color: transparent;
+                    border-bottom: none;
+
+                    & .btn-link {
+                        color: $text-color;
+                        font-weight: 500;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        & .accordian-arrow {
+                            width: 32px;
+                            height: 32px;
+                            border-radius: 50%;
+                            background-color: #ECECEC;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
