@@ -18,9 +18,17 @@
         background-repeat: no-repeat;
         background-size: 100%;
         padding-bottom: 0;
+
+        @media (max-width: $information-mobile-md) {
+            padding-bottom: 32px;
+        }
     }
 
     .section-fold-two {
+        @media (max-width: $information-mobile-md) {
+            text-align: center;
+        }
+
         .list-group {
             border: none;
             
@@ -40,6 +48,10 @@
         .image-section {
             .img-fluid {
                 width: 600px;
+            }
+
+            @media (max-width: $information-mobile-md) {
+               display: none;
             }
         }
 
@@ -113,12 +125,20 @@
                     background-color: transparent;
                     border-bottom: none;
 
+                 
+
                     & .btn-link {
                         color: $text-color;
                         font-weight: 500;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+
+                        @media (max-width: $information-mobile-md) {
+                            display: block;
+                            width: 100%;
+                            white-space: unset;
+                        }
 
                         & .accordian-arrow {
                             width: 32px;
@@ -128,6 +148,10 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
+
+                            @media (max-width: $information-mobile-md) {
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -140,7 +164,13 @@
             flex-direction: row;
             justify-content: center;
             margin: 40px 0;
-            
+
+            &:first-of-type {
+                @media (max-width: $information-mobile-md) {
+                    flex-direction: column;
+                }
+            }
+
             .list-group-item {
                 background: transparent;
                 border: none;
