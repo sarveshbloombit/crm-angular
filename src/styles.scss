@@ -546,6 +546,16 @@ h6 {
                 padding-left: 0;
                 padding-right: 0;
 
+                .navbar-toggler {
+                    display: none;
+                }
+
+                .navbar-collapse {
+                    @media (max-width: $information-mobile-md) {
+                        display: block !important;
+                    }
+                }
+
                 .navbar-nav {
                     flex-direction: column;
 
@@ -564,6 +574,10 @@ h6 {
 
                         & > .nav-link {
                             color: $text-white;
+
+                            @media (max-width: $information-mobile-md) {
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -575,5 +589,10 @@ h6 {
         margin-left: 250px;
         width: calc(100% - 250px);
         height: 100%;
+
+        @media (max-width: $information-mobile-md) {
+            margin-left: 50px;
+            width: calc(100% - 50px);
+        }
     }
 }
