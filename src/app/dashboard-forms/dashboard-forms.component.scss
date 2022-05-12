@@ -5,4 +5,25 @@
         margin-bottom: 16px;
         border-radius: 16px;
     }
+
+    .search-item-align {
+        margin-right: 16px;
+
+        &.form-inline {
+            position: relative;
+
+            .form-control {
+                padding-left: 30px;
+                border-left: none;
+                border-right: none;
+                border-top: none;
+                border-radius: 0;
+            }
+
+            .material-icons {
+                position: absolute;
+                left: 5px;
+            }
+        }
+    }
 }

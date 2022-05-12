@@ -544,4 +544,25 @@
   margin-bottom: 16px;
   border-radius: 16px;
 }
+
+.dashboard .search-item-align {
+  margin-right: 16px;
+}
+
+.dashboard .search-item-align.form-inline {
+  position: relative;
+}
+
+.dashboard .search-item-align.form-inline .form-control {
+  padding-left: 30px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-radius: 0;
+}
+
+.dashboard .search-item-align.form-inline .material-icons {
+  position: absolute;
+  left: 5px;
+}
 /*# sourceMappingURL=dashboard-forms.component.css.map */
