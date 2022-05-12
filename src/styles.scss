@@ -497,3 +497,76 @@ h6 {
         opacity: 0;
     }
 }
+
+//dashboard common styling
+.dashboard {
+    header {
+        .search-item-align {
+            &.form-inline {
+                position: relative;
+
+                .form-control {
+                    padding-left: 30px;
+                    border-left: none;
+                    border-right: none;
+                    border-top: none;
+                    border-radius: 0;
+                }
+
+                .material-icons {
+                    position: absolute;
+                    left: 5px;
+                }
+            }
+        }
+
+        .user-profile {
+            .user-content {
+                .dropdown {
+                    & .dropdown-toggle {
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .vertical-sidebar {
+        position: fixed;
+        left: 0;
+        top:0;
+        height: 100%;
+
+        & .navbar-vertical-container {
+            height: 100%;
+
+            .navbar-vertical {
+                flex-direction: column;
+                padding-left: 0;
+                padding-right: 0;
+
+                .navbar-nav {
+                    flex-direction: column;
+
+                    .nav-item {
+                        display: flex;
+                        align-items: center;
+                        padding: 8px 16px;
+
+                        &.active {
+                            background: #eeee;
+                            color: $text-color;
+                            & > .nav-link {
+                                color: $text-color;
+                            }
+                        }
+
+                        & > .nav-link {
+                            color: $text-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
