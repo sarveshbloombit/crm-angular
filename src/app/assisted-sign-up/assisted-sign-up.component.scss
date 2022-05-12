@@ -2,13 +2,31 @@
 
 .height-vh {
     height: 100vh;
+
+    @media (max-width: $information-mobile-md) {
+       height: 100%;
+    }
 }
 
 .section-content-block {
+    @media (max-width: $information-mobile-md) {
+        text-align: center;
+    }
+
     .section-block-title {
         & h3 {
             font-size: 32px;
             font-weight: $font-medium;
+        }
+    }
+
+    .section-list {
+        @media (max-width: $information-mobile-md) {
+            text-align: center;
+
+            .section-block-content {
+                width: 100%
+            }
         }
     }
 
@@ -20,6 +38,11 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-right: 16px;
+
+        @media (max-width: $information-mobile-sm) {
+            margin-right: 0px;
+        }
 
         &:hover {
             border: 1px solid $color-primary;
@@ -57,7 +80,11 @@
     }
 
     .section-block-image {
-        margin-top: 40px;  
+        margin-top: 40px;
+
+        @media (max-width: $information-mobile-md) {
+            display: none;
+        }
     }
 
     .list-group-custom {
@@ -65,6 +92,17 @@
             background-color: transparent;
             color: $text-white;
             font-size: 14px;
+
+            @media (max-width: $information-mobile-md) {
+                & img {
+                    display: none;
+                }
+            }
+        }
+
+        @media (max-width: $information-mobile-md) {
+            padding-left: 0;
+            text-align: center;
         }
     }
 
@@ -72,6 +110,10 @@
         & img {
             width: 350px;
             height: auto;
+
+            @media (max-width: $information-mobile-md) {
+                display: none;
+            }
         }
     }
 
@@ -83,13 +125,19 @@
         border: 1px solid #C4C4C4;
         border-radius: 16px;
         margin-top: 16px;
-        
+
+        @media (max-width: $information-mobile-md) {
+            & .section-icon {
+                display: none;
+            }
+        }
+
         &:hover {
             border: 1px solid #02042A;
         }
 
         .text {
-            & > p {
+            &>p {
                 font-size: 16px;
                 font-weight: $font-bold;
             }
