@@ -1,1 +1,114 @@
 @import "../../styles.scss";
+
+
+.dashboard {
+    .card-custom-graph {
+        border-radius: 8px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+
+        .card-body {
+            padding: 24px;
+            position: relative;
+
+            .badge-band {
+                .badge-warning {
+                    color: $color-primary;
+                    padding: 8px 16px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border-top-left-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                    border-bottom-left-radius: 0px;
+                    border-top-right-radius: 0px;
+                }
+
+                .label-default {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 8px 24px;
+                    color: #19A863;
+                    font-size: 12px;
+                    display: flex;
+                    align-items: center;
+
+                    .badge {
+                        width: 8px;
+                        height: 8px;
+                        margin-right: 6px;
+                        display: block;
+                    }
+                }
+            }
+
+            .count {
+                display: flex;
+                align-items: center;
+
+                &>span {
+                    font-size: 16px;
+                    font-weight: normal;
+                    margin-left: 15px;
+                }
+            }
+
+            .card-graph {
+                width: 90px;
+                height: auto;
+            }
+
+            .card-footer {
+                background: transparent;
+                border: none;
+                display: flex;
+                justify-content: flex-end;
+                padding-left: 0;
+                padding-right: 0;
+                padding-bottom: 0;
+                margin-top: 16px;
+
+                & button:not(last-of-type) {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+
+    .search-item-align {
+        margin-right: 16px;
+
+        &.form-inline {
+            position: relative;
+
+            .form-control {
+                padding-left: 30px;
+                border-left: none;
+                border-right: none;
+                border-top: none;
+                border-radius: 0;
+            }
+
+            .material-icons {
+                position: absolute;
+                left: 5px;
+            }
+        }
+    }
+
+    table {
+        border: 1px solid $color-border;
+        border-radius: 8px;
+
+        thead {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            background-color: #F3F0F0;
+
+            & tr th {
+                border-bottom: 1px solid $color-border;
+            }
+        }
+    }
+}

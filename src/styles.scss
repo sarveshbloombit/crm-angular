@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css";
+// @import "~bootstrap/dist/css/bootstrap.css";
 
 
 //common container width used
@@ -500,6 +500,7 @@ h6 {
 
 //dashboard common styling
 .dashboard {
+    height: 100%;
     header {
         .search-item-align {
             &.form-inline {
@@ -568,5 +569,11 @@ h6 {
                 }
             }
         }
+    }
+
+    main {
+        margin-left: 250px;
+        width: calc(100% - 250px);
+        height: 100%;
     }
 }
