@@ -33,6 +33,11 @@
             padding: 8px 24px;
             margin-left: -56px;
             margin-right: -56px;
+
+            @media (max-width: $information-mobile-md) {
+                margin-left: 0px;
+                width: 100%;
+            }
         }
 
         .section-area {
@@ -47,6 +52,10 @@
                 height: 100%;
                 background: #E9F9FF;
                 box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.03);
+
+                @media (max-width: $information-mobile-md) {
+                    top: 222px;
+                }
 
                 .list-group {
                     
@@ -74,6 +83,11 @@
                 background: #E9F9FF;
                 padding: 16px;
                 box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.03);
+
+                @media (max-width: $information-mobile-md) {
+                    top: 222px;
+                }
+
             }
 
             .form-content {
@@ -119,6 +133,10 @@
             justify-content: flex-end;
             position: fixed;
             bottom: 0;
+
+            @media (max-width: $information-mobile-md) {
+                width:  calc(100% - 384px);
+            }
         }
     }
 }
