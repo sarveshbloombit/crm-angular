@@ -562,4 +562,198 @@
     width: calc(100% - 50px);
   }
 }
+
+.sidebar-section {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.sidebar-section .custom-sidebar {
+  width: 500px;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  background: #fff;
+  padding: 24px;
+}
+
+.sidebar-section .custom-sidebar .custom-switch {
+  /* Rounded sliders */
+}
+
+.sidebar-section .custom-sidebar .custom-switch .content-label {
+  width: 70%;
+}
+
+.sidebar-section .custom-sidebar .custom-switch .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.sidebar-section .custom-sidebar .custom-switch .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.sidebar-section .custom-sidebar .custom-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sidebar-section .custom-sidebar .custom-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sidebar-section .custom-sidebar .custom-switch input:checked + .slider {
+  background-color: #2196F3;
+}
+
+.sidebar-section .custom-sidebar .custom-switch input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+.sidebar-section .custom-sidebar .custom-switch input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.sidebar-section .custom-sidebar .custom-switch .slider.round {
+  border-radius: 34px;
+}
+
+.sidebar-section .custom-sidebar .custom-switch .slider.round:before {
+  border-radius: 50%;
+}
+
+.dashboard {
+  position: relative;
+}
+
+.dashboard main header {
+  -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.03);
+  padding: 16px;
+  width: calc(100% + 80px);
+  padding: 8px 24px;
+  margin-left: -56px;
+  margin-right: -56px;
+}
+
+.dashboard main .section-area {
+  height: calc(100% - 70px);
+  padding-bottom: 70px;
+}
+
+.dashboard main .section-area .sidebar-inputs {
+  position: absolute;
+  right: 0;
+  top: 183px;
+  background: #ffff;
+  width: 300px;
+  height: 100%;
+  background: #E9F9FF;
+  -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.03);
+}
+
+.dashboard main .section-area .sidebar-inputs .list-group .list-group-item {
+  border: none;
+  padding: 16px;
+  background: #E9F9FF;
+}
+
+.dashboard main .section-area .sidebar-inputs .list-group .list-group-item img {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.dashboard main .section-area .form-content {
+  width: calc(100% - 320px);
+}
+
+.dashboard main .section-area .form-content .component-added {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 24px 0;
+}
+
+.dashboard main .section-area .form-content .component-added .drag-item {
+  margin-right: 24px;
+}
+
+.dashboard main .section-area .form-content .component-added .form-group {
+  width: 100%;
+}
+
+.dashboard main .section-area .form-content .component-added .component-action {
+  margin-left: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dashboard main .section-area .form-content .component-added .component-action .icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #eeee;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dashboard main footer {
+  border-top: 1px solid #C4C4C4;
+  -webkit-box-shadow: -91px 20px 40px rgba(0, 0, 0, 0.03);
+          box-shadow: -91px 20px 40px rgba(0, 0, 0, 0.03);
+  padding: 16px 24px;
+  width: calc(100% - 582px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: fixed;
+  bottom: 0;
+}
 /*# sourceMappingURL=forms-edit-view.component.css.map */
