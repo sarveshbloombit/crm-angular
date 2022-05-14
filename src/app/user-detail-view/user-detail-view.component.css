@@ -562,4 +562,29 @@
     width: calc(100% - 50px);
   }
 }
+
+.dashboard main .user-detail-block {
+  padding: 24px 32px;
+  background: rgba(232, 255, 238, 0.49);
+  border-radius: 16px;
+}
+
+.dashboard main .user-detail-block .user-image {
+  width: 150px;
+  height: 150px;
+}
+
+.dashboard main .charts-section {
+  height: 100%;
+  margin: 32px 0;
+}
+
+.dashboard main .charts-section .col-sm {
+  height: 100%;
+}
+
+.dashboard main .charts-section .col-sm .card {
+  height: 100%;
+  border-radius: 16px;
+}
 /*# sourceMappingURL=user-detail-view.component.css.map */

@@ -1,1 +1,30 @@
 @import "../../styles.scss";
+
+.dashboard {
+    & main {
+        .user-detail-block {
+            padding: 24px 32px;
+            background: rgba(232, 255, 238, 0.49);
+            border-radius: 16px;
+
+            .user-image {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        .charts-section {
+            height: 100%;
+            margin: 32px 0;
+
+            .col-sm {
+                height: 100%;
+
+                .card {
+                    height: 100%;
+                    border-radius: 16px;
+                }
+            }
+        }
+    }
+}
