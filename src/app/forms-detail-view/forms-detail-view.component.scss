@@ -1,0 +1,44 @@
+@import "../../styles.scss";
+
+.dashboard {
+    & main {
+        & header {
+            box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.03);
+            padding: 16px;
+            width: calc(100% + 80px);
+            padding: 8px 24px;
+            margin-left: -56px;
+            margin-right: -56px;
+        }
+
+        .charts-section {
+            height: 100%;
+            margin: 32px 0;
+
+            .col-sm {
+                height: 100%;
+
+                .card {
+                    height: 100%;
+                    border-radius: 16px;
+                }
+            }
+        }
+
+        table {
+            border: 1px solid $color-border;
+            border-radius: 8px;
+            margin: 32px 0;
+
+            thead {
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                background-color: #F3F0F0;
+
+                & tr th {
+                    border-bottom: 1px solid $color-border;
+                }
+            }
+        }
+    }
+}
