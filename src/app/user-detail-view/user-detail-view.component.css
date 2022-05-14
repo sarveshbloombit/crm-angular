@@ -574,6 +574,13 @@
   height: 150px;
 }
 
+@media (max-width: 768px) {
+  .dashboard main .user-detail-block .user-profile {
+    display: block !important;
+    text-align: center;
+  }
+}
+
 .dashboard main .charts-section {
   height: 100%;
   margin: 32px 0;
@@ -586,5 +593,11 @@
 .dashboard main .charts-section .col-sm .card {
   height: 100%;
   border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+  .dashboard main .charts-section .col-sm .card {
+    margin-bottom: 24px;
+  }
 }
 /*# sourceMappingURL=user-detail-view.component.css.map */

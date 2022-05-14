@@ -11,6 +11,13 @@
                 width: 150px;
                 height: 150px;
             }
+
+            .user-profile {
+                @media (max-width: $information-mobile-md) {
+                    display: block !important;
+                    text-align: center;
+                }
+            }
         }
 
         .charts-section {
@@ -23,6 +30,10 @@
                 .card {
                     height: 100%;
                     border-radius: 16px;
+
+                    @media (max-width: $information-mobile-md) {
+                        margin-bottom: 24px;
+                    }
                 }
             }
         }
