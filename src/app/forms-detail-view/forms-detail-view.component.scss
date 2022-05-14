@@ -9,6 +9,12 @@
             padding: 8px 24px;
             margin-left: -56px;
             margin-right: -56px;
+
+            
+            @media (max-width: $information-mobile-md) {
+                margin-left: 0px;
+                width: 100%;
+            }
         }
 
         .charts-section {
